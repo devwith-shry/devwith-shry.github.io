@@ -5,6 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shreya's Portfolio</title>
   <style>
+    .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    border-top: 1px solid var(--accent);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
     :root {
       --bg: #0e0e11;
       --text: #f4f4f4;
@@ -134,14 +170,15 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>devwith.shry</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -188,53 +225,6 @@
       <p>Completed a Mastercard x Forage project on phishing awareness and detection simulation.</p>
     </div>
   </section>
- 
-  <section id="certifications">
-    <h2>Licenses & Certifications</h2>
-    <div class="project-card">
-      <a href="https://www.credly.com/badges/5db157ed-e996-4974-9fc2-7209d4000f36/public_url" target="_blank" rel="noopener noreferrer">
-      <h3>Prompt Design in Vertex AI</h3>
-      </a>
-
-      <p>Issued by Google Cloud<br>Skills: Prompt Engineering, Google Cloud Platform (GCP)      </p>
-    </div>
-    <div class="project-card">
-      <a href="https://www.hackerrank.com/certificates/91846600069e" target="_blank" rel="noopener noreferrer">
-      <h3>Python Basics</h3>
-      </a>
-
-      <p>Issued by HackerRank</p>
-    </div>
-    <div class="project-card">
-      <a href="https://www.life-global.org/certificate/73eba2cd-9e52-4f42-a535-4276e0c3549b" target="_blank" rel="noopener noreferrer">
-      <h3>AI for Beginners</h3>
-      </a>
-
-      <p>Issued by HP LIFE<br>Skills: Artificial Intelligence (AI)</p>
-    </div>
-    <div class="project-card">
-      <a href="https://drive.google.com/file/d/1BG1ig7GsgYRcZ9WlQYFqM7I22c5EAwR-/view" target="_blank" rel="noopener noreferrer">
-      <h3>TCS iON Young Professional</h3>
-      </a>
-
-      <p>Issued by TCS iON6</p>
-    </div>
-    <div class="project-card">
-      <a href="https://www.credly.com/badges/0dd4fe75-242d-417c-adef-59e84d9cd0f1/public_url" target="_blank" rel="noopener noreferrer">
-      <h3>Introduction to Cybersecurity</h3>
-      </a>
-
-      <p>Issued by Cisco<br>Skills: Cybersecurity Fundamentals</p>
-    </div>
-    <div class="project-card">
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mastercard/vcKAB5yYAgvemepGQ_Mastercard_KCp2esPi4EG9tsLGL_1727559769559_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
-      <h3>Mastercard - Cybersecurity Job Simulation</h3>
-      </a>
-
-      <p>Issued by Forage<br>Skills: Threat Identification, Phishing Simulation</p>
-    </div>
-  </section>
-
   <section id="contact">
     <h2>Let’s Collaborate</h2>
     <p>
