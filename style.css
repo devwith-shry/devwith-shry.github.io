@@ -1,15 +1,5 @@
-/* ==========================================================================
-   devwith.shry — Personal Portfolio Stylesheet
-   Sangita Bhowmick | Computer Science Student | Software & Cloud Enthusiast
-   Aesthetic: Dark Editorial + Software Engineering Portfolio + Subtle Tech
-   Location: D:\portfolio\style.css
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   CSS Variables & Design Tokens
-   -------------------------------------------------------------------------- */
 :root {
-  /* Dark Monochromatic Base with Controlled Accents */
+  /* Dark Monochromatic Base  */
   --bg-canvas: #090b10;
   --bg-surface: #11141d;
   --bg-surface-elevated: #161b26;
@@ -61,9 +51,7 @@
   --transition-normal: 240ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --------------------------------------------------------------------------
-   Reset & Baseline
-   -------------------------------------------------------------------------- */
+/* Reset & Baseline */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -163,9 +151,7 @@ code, .font-mono {
   padding: 0 24px;
 }
 
-/* --------------------------------------------------------------------------
-   Navigation Bar (Sticky, Clean, Restrained)
-   -------------------------------------------------------------------------- */
+/* Navigation Bar*/
 .site-header {
   position: sticky;
   top: 0;
@@ -328,9 +314,7 @@ code, .font-mono {
   color: var(--accent-blue);
 }
 
-/* --------------------------------------------------------------------------
-   Section Layout Standards
-   -------------------------------------------------------------------------- */
+/*Section Layout */
 .section {
   padding: var(--section-spacing) 0;
   border-bottom: 1px solid var(--border-subtle);
@@ -374,9 +358,7 @@ code, .font-mono {
   max-width: 62ch;
 }
 
-/* --------------------------------------------------------------------------
-   Hero Section
-   -------------------------------------------------------------------------- */
+/* Hero Section */
 .hero-section {
   padding-top: calc(var(--section-spacing) * 0.75);
   padding-bottom: calc(var(--section-spacing) * 0.85);
@@ -494,9 +476,7 @@ code, .font-mono {
   color: var(--text-primary);
 }
 
-/* --------------------------------------------------------------------------
-   Quick Professional Snapshot (Structured Grid)
-   -------------------------------------------------------------------------- */
+/* Quick Professional Snapshot (Structured Grid)*/
 .snapshot-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -539,9 +519,7 @@ code, .font-mono {
   color: var(--text-secondary);
 }
 
-/* --------------------------------------------------------------------------
-   About Section
-   -------------------------------------------------------------------------- */
+/* About Section*/
 .about-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr;
@@ -594,9 +572,7 @@ code, .font-mono {
   margin-top: 1px;
 }
 
-/* --------------------------------------------------------------------------
-   Projects Section (Editorial Cards)
-   -------------------------------------------------------------------------- */
+/* Projects Section (Editorial Cards)*/
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -749,9 +725,7 @@ code, .font-mono {
   color: var(--text-secondary);
 }
 
-/* --------------------------------------------------------------------------
-   Open Source / Contributions Section
-   -------------------------------------------------------------------------- */
+/* Open Source / Contributions Section*/
 .oss-container {
   display: flex;
   flex-direction: column;
@@ -828,9 +802,7 @@ code, .font-mono {
   flex-shrink: 0;
 }
 
-/* --------------------------------------------------------------------------
-   Research Section
-   -------------------------------------------------------------------------- */
+/*Research Section*/
 .research-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -943,9 +915,7 @@ code, .font-mono {
   color: var(--text-muted);
 }
 
-/* --------------------------------------------------------------------------
-   Skills Section
-   -------------------------------------------------------------------------- */
+/*Skills Section*/
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
@@ -1004,9 +974,7 @@ code, .font-mono {
   color: var(--text-primary);
 }
 
-/* --------------------------------------------------------------------------
-   Certifications Section (Compact Timeline/List)
-   -------------------------------------------------------------------------- */
+/* Certifications Section*/
 .cert-list {
   display: flex;
   flex-direction: column;
@@ -1062,9 +1030,7 @@ code, .font-mono {
   flex-shrink: 0;
 }
 
-/* --------------------------------------------------------------------------
-   Education Section
-   -------------------------------------------------------------------------- */
+/* Education Section */
 .education-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1103,50 +1069,7 @@ code, .font-mono {
   line-height: 1.6;
 }
 
-/* --------------------------------------------------------------------------
-   Current Focus Section
-   -------------------------------------------------------------------------- */
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 14px;
-}
-
-.focus-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 18px;
-  transition: border-color var(--transition-fast);
-}
-
-.focus-card:hover {
-  border-color: var(--border-default);
-}
-
-.focus-number {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--accent-blue);
-  margin-bottom: 6px;
-}
-
-.focus-heading {
-  font-size: 14.5px;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.focus-text {
-  font-size: 12.5px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
-
-/* --------------------------------------------------------------------------
-   Contact Section
-   -------------------------------------------------------------------------- */
+/* Contact Section */
 .contact-container {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1213,9 +1136,7 @@ code, .font-mono {
   color: var(--text-primary);
 }
 
-/* --------------------------------------------------------------------------
-   Footer
-   -------------------------------------------------------------------------- */
+/* Footer*/
 .site-footer {
   padding: 36px 0;
   background: var(--bg-surface-subtle);
@@ -1255,9 +1176,7 @@ code, .font-mono {
   color: var(--accent-blue);
 }
 
-/* --------------------------------------------------------------------------
-   Toast / Notification Component
-   -------------------------------------------------------------------------- */
+/* -Toast / Notification Component*/
 .toast {
   position: fixed;
   bottom: 24px;
@@ -1285,9 +1204,7 @@ code, .font-mono {
   transform: translateY(0);
 }
 
-/* --------------------------------------------------------------------------
-   Responsive Rules
-   -------------------------------------------------------------------------- */
+/* Responsive Rules*/
 @media (max-width: 900px) {
   .snapshot-grid {
     grid-template-columns: repeat(2, 1fr);
